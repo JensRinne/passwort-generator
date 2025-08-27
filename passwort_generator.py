@@ -1,7 +1,3 @@
-import os, sys, subprocess
-req_path = os.path.join(os.path.dirname(__file__), "requirements.txt")
-if os.path.isfile(req_path):
-    subprocess.run([sys.executable, "-m", "pip", "install", "-r", req_path])
     
 import hashlib
 import requests
@@ -120,7 +116,7 @@ def main():
         print("="*32)
         while True:
             length = ask_int("Passwortlänge", 16, 4, 128)
-            count = ask_int("Anzahl der Passwörter", 5, 1, 50)
+            count = ask_int("Anzahl der Passwörter", 1, 1, 50)
             use_upper = ask_bool("Großbuchstaben verwenden?", True)
             use_lower = ask_bool("Kleinbuchstaben verwenden?", True)
             use_digits = ask_bool("Ziffern verwenden?", True)

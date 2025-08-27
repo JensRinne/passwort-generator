@@ -1,44 +1,50 @@
-# Passwort Generator
 
-Ein sicheres, interaktives Python-Tool zur schnellen Generierung von Passwörtern mit individuellen Einstellungen (Länge, Zeichentypen, HIBP-Prüfung usw.).
+# Password Generator
+
+A secure, interactive Python tool for quickly generating passwords with custom settings (length, character types, HIBP check, etc.).
 
 ## Features
-- Interaktives Terminal-Menü mit Auswahl aller Parameter
-- Generierung mehrerer Passwörter auf einmal
-- Optionaler HIBP-Leak-Check ("Have I Been Pwned")
-- Komfortable Bedienung per Doppelklick oder Kommandozeile
+- Interactive terminal menu for all parameters
+- Generate multiple passwords at once
+- Optional HIBP leak check ("Have I Been Pwned")
+- Easy to use via double-click or command line
 
-## Voraussetzungen
-- Python 3.7 oder neuer
-- Die Pakete `requests` und `argparse` (argparse ist ab Python 3.2 Standard)
+## Requirements
+- Python 3.7 or newer
+- Packages: `requests` (argparse is included in Python 3.2+)
 
-## Installation der Abhängigkeiten
+## Install dependencies
 
-Installiere das benötigte Paket mit:
+Install the required package with:
 
 ```
 pip install requests
 ```
 
-## Nutzung
+## Usage
 
-1. Starte das Skript per Doppelklick oder im Terminal:
+1. Start the script by double-clicking or in the terminal:
 
 ```
 python passwort_generator.py
 ```
 
-2. Folge den Anweisungen im Menü und wähle die gewünschten Optionen.
+2. Follow the menu instructions and select your options.
 
-3. Die generierten Passwörter werden angezeigt und können einfach kopiert werden.
+3. The generated passwords will be displayed and can be copied easily.
 
-## Automatische Installation von requirements.txt
 
-Optional: Das Skript kann so erweitert werden, dass es beim Start prüft, ob eine `requirements.txt` im gleichen Verzeichnis liegt und die Pakete automatisch installiert. (Siehe unten)
+## Installing all requirements from requirements.txt
+
+If you want to install all dependencies at once, run:
+
+```
+pip install -r requirements.txt
+```
 
 ---
 
-## Hinweise
-- Die HIBP-Prüfung benötigt eine Internetverbindung.
-- Die Passwörter werden nicht gespeichert.
-- Das Skript funktioniert auf Windows, Linux und macOS.
+## Notes
+- HIBP check requires an internet connection.
+- Passwords are not saved.
+- The script works on Windows, Linux, and macOS.
